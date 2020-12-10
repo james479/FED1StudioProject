@@ -1,0 +1,19 @@
+﻿body {
+    background-color: lightgray;
+}
+
+nav ul li a {
+    color: darkblue;
+}
+
+#headline {
+    font-size: 40px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+footer p {
+    font-style: italic;
+}
