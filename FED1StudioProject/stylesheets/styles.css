@@ -4,8 +4,8 @@
 
 nav ul {
     background-color: antiquewhite;
-    padding: 1em;
     border: 1px solid black;
+    padding: 0;
 }
 
 nav li {
@@ -15,18 +15,19 @@ nav li {
 
 nav li:hover {
     background-color: darkblue;
+    color: cornflowerblue;
 }
 
 nav ul li a {
     color: darkblue;
-    padding: 1em 1em;
     text-decoration: none;
-    color: cornflowerblue;
+    display: block;
+    padding: 1em;
 }
 
-nav ul li a:hover {
-    color: white;
-}
+    nav ul li a:hover {
+        color: white;
+    }
 
 #headline {
     font-size: 40px;
