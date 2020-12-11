@@ -1,4 +1,7 @@
-﻿* {
+﻿
+/*#region AllPages*/
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -66,24 +69,36 @@ nav {
     clear: both;
 }
 
-.width-60 {
-    width: 65%;
-}
 
 #heading {
     display: inline-block;
     margin-left: 3em;
 }
 
-#heading h1 {
-    margin-bottom: 1em;
-}
+    #heading h1 {
+        margin-bottom: 1em;
+    }
 
 
 #headline {
     font-size: 40px;
 }
 
+footer {
+    background-color: rgb(52, 58, 64);
+    text-align: center;
+    margin-top: 2em;
+}
+
+    footer p {
+        font-style: italic;
+        color: #fff;
+    }
+
+/*#endregion*/
+
+
+/*#region index*/
 
 #aboutUs img {
     width: 15em;
@@ -113,18 +128,14 @@ nav {
     margin-left: 2em;
 }
 
-footer {
-    background-color: rgb(52, 58, 64);
-    text-align: center;
-    margin-top: 2em;
-}
+/*#endregion*/
 
-    footer p {
-        font-style: italic;
-        color: #fff;
-    }
 
-/* team page*/
+
+
+
+/*#region team*/
+
 #leadership {
     width: 60%;
 }
@@ -134,12 +145,15 @@ aside {
     padding-left: 3em;
 }
 
-aside ul {
-    padding-left: 3em;
-}
+    aside ul {
+        padding-left: 3em;
+    }
 
-aside ul li {
-    padding: 1.5em 0;
-}
+        aside ul li {
+            padding: 1.5em 0;
+        }
+
+/*#endregion*/
+
 
 
