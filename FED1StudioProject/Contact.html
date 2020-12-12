@@ -6,6 +6,7 @@
     <meta name="description" content="This is the home page for the educational services company" />
     <meta name="keywords" content="education, contact, <company name>, classes" />
     <meta name="author" content="James Glover" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link href="stylesheets/styles.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
@@ -13,10 +14,17 @@
 </head>
 <body>
     <header>
-        <img src="/images//image-container.png" alt="Company Logo" />
-        <div id="heading">
-            <h1 id="compnayName">Company Name</h1>
-            <h2>Slogan</h2>
+        <div class="floatLeft">
+            <img src="/images//image-container.png" alt="Company Logo" class="floatLeft" />
+            <div id="heading">
+                <h1 id="compnayName">Company Name</h1>
+                <h2>Slogan</h2>
+            </div>
+        </div>
+        <div class="floatRight">
+            <a href="#"><i class="fab fa-facebook-square fa-3x" id="facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter socialMedi fa-3x" id="twitter"></i></a>
+            <!-- add any other social media icons here -->
         </div>
     </header>
     <div class="clear"></div>
@@ -37,7 +45,7 @@
         </ul>
     </nav>
     <main>
-        <section>
+        <section id="contact">
             <h1>Contact Us</h1>
             <ul>
                 <li>Phone: <a href="tel:+01-345-655-5624">345-655-5624</a></li>

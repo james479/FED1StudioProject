@@ -70,6 +70,7 @@
     <Content Include="Classes.html" />
     <Content Include="Contact.html" />
     <Content Include="images\image-container.png" />
+    <Content Include="images\team_member.png" />
     <Content Include="index.html" />
     <Content Include="stylesheets\styles.css" />
     <Content Include="Team.html" />
