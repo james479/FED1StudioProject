@@ -21,13 +21,27 @@ header {
         height: 10em;
     }
 
+.icon {
+    margin-left: .5em;
+    background-size: 
+}
+
 #facebook {
     color: rgb(59, 89, 152);
-    margin-right: .3em;
+    font
+    
 }
 
 #twitter {
     color: rgb(29, 202, 255);
+}
+
+#instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    /* Also define standard property for compatibility */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 nav {
@@ -53,29 +67,26 @@ nav {
         color: #fff;
         text-decoration: none;
         display: inline-block;
+        border-radius: 10px;
         margin: 0 1em;
         padding: 1em;
-        transition: all .2s;
+        transition: all .5s;
     }
 
 
     nav ul li a:hover {
         color: #000;
         background-color: #fff;
-        border-radius: 10px;
         transform: translateY(-3px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
 
     nav ul li a:active {
-        transform: translateY(-1px);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        transform: translateY(1px);
     }
 
 .pageHeadline {
     font-size: 2.8rem;
     text-align: center;
-   
     margin-bottom: 2em;
 }
 
@@ -138,9 +149,9 @@ footer {
     position: relative;
 }
 
-#whyChooseUs article h2 {
-    margin-bottom: .5em;
-}
+    #whyChooseUs article h2 {
+        margin-bottom: .5em;
+    }
 
 #rightHeadline {
     padding: 2em 0 0 2em;
@@ -164,7 +175,7 @@ footer {
 
 /*#region classes*/
 
-main { 
+main {
     margin: 0 3em;
 }
 
@@ -184,9 +195,7 @@ main {
     display: inline-block;
     width: 14.6875em;
     height: 25em;
-  
     border: 1px solid #000;
-
 }
 
 .cardImage {
@@ -199,19 +208,19 @@ main {
     padding: 0 .7em;
 }
 
-.cardText h4 {
-    text-align: center;
-    padding: .7em 0;
-}
+    .cardText h4 {
+        text-align: center;
+        padding: .7em 0;
+    }
 
-.cardText p {
-    text-align: justify;
-}
+    .cardText p {
+        text-align: justify;
+    }
 
-.cardText h4, .cardText p {
-    text-decoration: none;
-    color: #000;
-}
+    .cardText h4, .cardText p {
+        text-decoration: none;
+        color: #000;
+    }
 
 /*table styling*/
 
@@ -229,10 +238,10 @@ thead tr {
     background-color: #d3d3d3;
 }
 
-thead tr th {
-    padding: 1.3em;
-    font-size: .7em;
-}
+    thead tr th {
+        padding: 1.3em;
+        font-size: .7em;
+    }
 
 tbody tr td {
     padding: 1em;
@@ -260,13 +269,13 @@ tbody tr:not(:last-child) {
     width: 70%;
 }
 
-#leadership article:not(:last-child) {
-    margin-bottom: 3.5em;
-}
+    #leadership article:not(:last-child) {
+        margin-bottom: 3.5em;
+    }
 
-#leadership article img {
-    margin-right: 1.5em;
-}
+    #leadership article img {
+        margin-right: 1.5em;
+    }
 
 aside h2 {
     margin-bottom: 2em;
@@ -276,9 +285,9 @@ aside ul {
     padding-left: 2em;
 }
 
-aside ul li {
-    padding: 1.5em 0; 
-}
+    aside ul li {
+        padding: 1.5em 0;
+    }
 
 /*#endregion*/
 
@@ -288,20 +297,44 @@ aside ul li {
     text-align: center;
 }
 
-    #contact h1 {
-        margin-bottom: 1.5em;
-    }
+#contact h1 {
+    margin-bottom: 1em;
+    font-size: 2.8em;
+}
 
-        #contact h1 ul {
-            margin: 0 auto;
-            font-size: 3em;
-        }
+#contact ul {
+    display: inline-block;
+    margin-bottom: 2em;
+}
 
-    #contact ul li {
-        list-style-type: none;
-        font-size: 2.5em;
-        text-align: left;
-    }
+#contact h1, #contact ul li {
+    text-align: center;
+}
+
+#contact ul li {
+    list-style-type: none;
+    font-size: 1.5em;
+    text-align: left;
+    padding: .5em;
+    border-bottom: 1px solid #333;
+}
+
+#contact ul li:hover {
+    background-color: rgba(220, 220, 220, .6);
+}
+
+#contact ul li:first-child {
+    border-top: 1px solid #333;
+}
+
+.contactList {
+    color: #000;
+    text-decoration: none;
+}
+
+.contactList:hover {
+    
+}
 
 /*#endregion*/
 
