@@ -55,8 +55,6 @@ nav {
         padding: 1.5em 1em;
     }
 
-    nav ul li:hover {
-    }
 
     nav ul li a:hover {
         color: #000;
@@ -67,7 +65,7 @@ nav {
 .pageHeadline {
     font-size: 2.8rem;
     text-align: center;
-    margin-top: 2.5em;
+   
     margin-bottom: 2em;
 }
 
@@ -248,35 +246,29 @@ tbody tr:not(:last-child) {
 
 
 /*#region team*/
-
 #leadership {
-    width: 60%;
+    width: 70%;
 }
 
-    #leadership article img {
-        margin-bottom: 1.5em;
-        display: block;
-        border-radius: 50%;
-    }
-
-    #leadership h1 {
-        font-size: 2.8rem;
-        text-align: center;
-        margin-bottom: 2em;
-    }
-
-aside {
-    width: 30%;
-    padding-left: 3em;
+#leadership article:not(:last-child) {
+    margin-bottom: 3.5em;
 }
 
-    aside ul {
-        padding-left: 3em;
-    }
+#leadership article img {
+    margin-right: 1.5em;
+}
 
-        aside ul li {
-            padding: 1.5em 0;
-        }
+aside h2 {
+    margin-bottom: 2em;
+}
+
+aside ul {
+    padding-left: 2em;
+}
+
+aside ul li {
+    padding: 1.5em 0; 
+}
 
 /*#endregion*/
 
