@@ -64,6 +64,13 @@ nav {
         border-radius: 8px;
     }
 
+.pageHeadline {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+}
+
 .floatLeft {
     float: left;
 }
@@ -119,13 +126,6 @@ footer {
     height: 25em;
 }
 
-#whyChooseUs h1 {
-    font-size: 2.8rem;
-    text-align: center;
-    margin-top: 2.5em;
-    margin-bottom: 2em;
-}
-
 #whyChooseUs article {
     position: relative;
 }
@@ -149,6 +149,96 @@ footer {
 
 
 
+
+
+/*#endregion*/
+
+
+/*#region classes*/
+
+main { 
+    margin: 0 3em;
+}
+
+.cardGallery {
+    margin-bottom: 3em;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+
+
+.card {
+    display: inline-block;
+    width: 14.6875em;
+    height: 25em;
+  
+    border: 1px solid #000;
+
+}
+
+.cardImage {
+    width: 100%;
+    height: 11.25em;
+    object-fit: cover;
+}
+
+.cardText {
+    padding: 0 .7em;
+}
+
+.cardText h4 {
+    text-align: center;
+    padding: .7em 0;
+}
+
+.cardText p {
+    text-align: justify;
+}
+
+.cardText h4, .cardText p {
+    text-decoration: none;
+    color: #000;
+}
+
+/*table styling*/
+
+#table table {
+    margin: 0 auto;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+thead tr {
+    background-color: #d3d3d3;
+}
+
+thead tr th {
+    padding: 1.3em;
+    font-size: .7em;
+}
+
+tbody tr td {
+    padding: 1em;
+    font-size: .7em;
+}
+
+tbody tr:not(:last-child) {
+    border-bottom: 1px solid #dedede;
+}
+
+#table h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
 
 
 /*#endregion*/
