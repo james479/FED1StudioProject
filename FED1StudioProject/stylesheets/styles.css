@@ -43,23 +43,33 @@ nav {
     nav li {
         display: inline-block;
         list-style: none;
+        padding: 1em;
+        position: relative;
     }
 
 
 
-    nav ul li a {
+    nav ul li a:link, nav ul li a:visited {
         color: #fff;
         text-decoration: none;
-        display: block;
+        display: inline-block;
         margin: 0 1em;
-        padding: 1.5em 1em;
+        padding: 1em;
+        transition: all .2s;
     }
 
 
     nav ul li a:hover {
         color: #000;
         background-color: #fff;
-        border-radius: 8px;
+        border-radius: 10px;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul li a:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     }
 
 .pageHeadline {
