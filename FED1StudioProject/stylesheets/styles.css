@@ -26,6 +26,10 @@ header {
     background-size: 
 }
 
+.boxShadow {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
 #facebook {
     color: rgb(59, 89, 152);
     font
