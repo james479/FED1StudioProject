@@ -6,82 +6,93 @@
     <meta name="keywords" content="education, team, employers <company name>, classes" />
     <meta name="author" content="James Glover" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-    <link href="stylesheets/styles.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" />
+    <link href="stylesheets/styles.css" rel="stylesheet" />
     <title>Company Name | Team</title>
 </head>
 <body>
-    <header>
-        <div class="floatLeft">
-            <img src="/images//image-container.png" alt="Company Logo" class="floatLeft" />
-            <div id="heading">
-                <h1 id="compnayName">Company Name</h1>
-                <h2>Slogan</h2>
+    <div class="container">
+        <header>
+            <div class="d-flex justify-content-between">
+                <div class=d-flex>
+                    <img src="/images/header-logo.jpg" alt="Company Logo" class="box-shadow" />
+                    <div class="headline">
+                        <h1 class="compnay-name">I.T. School</h1>
+                        <h2>A place for your to discover your future</h2>
+                    </div>
+                </div>
+                <div>
+                    <a href="#"><i class="fab fa-facebook-square fa-2x icon facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter socialMedi fa-2x icon twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square fa-2x icon instagram"></i></a>
+                    <!-- add any other social media icons here -->
+                </div>
             </div>
-        </div>
-        <div class="floatRight">
-            <a href="#"><i class="fab fa-facebook-square fa-2x icon" id="facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter socialMedi fa-2x icon" id="twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram-square fa-2x icon" id="instagram"></i></a>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        </div>
-    </header>
-    <div class="clear"></div>
-    <nav>
-        <ul>
-            <li>
-                <a href="/index.html">Home</a>
-            </li>
-            <li>
-                <a href="/Classes.html">Classes</a>
-            </li>
-            <li>
-                <a href="/Team.html">Team</a>
-            </li>
-            <li>
-                <a href="/Contact.html">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    <main>
-        <section id="leadership" class="floatLeft">
-            <h1 class="pageHeadline">Leadership</h1>
-            <article>
-                <img src="/images/team_member.png" alt="team member" class="floatLeft" />
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                </p>
-            </article>
-            
-            <article>
-                <img src="/images/team_member.png" alt="team member" class="floatLeft" />
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                </p>
-            </article>
-            
-            <article>
-                <img src="/images/team_member.png" alt="team member" class="floatLeft" />
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                </p>
-            </article>
-        </section>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Classes.html">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="row">
+                <section class="leadership d-flex flex-column col-md-9">
+                    <h1 class="page-headline">Leadership</h1>
+                    <article>
+                        <img src="/images/president.jpg" alt="team member" class="float-left thumbnail img-responsive rounded-circle" />
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </article>
 
-        <aside class="floatRight">
-            <h2>By Department</h2>
-            <ul>
-                <li>Leadership</li>
-                <li>Sales</li>
-                <li>Administration</li>
-                <li>Instructors</li>
-            </ul>
-        </aside>
-    </main>
-    <div class="clear"></div>
-    <footer>
-        <p>All Rights Reserved &copy; 2020</p>
-    </footer>
+                    <article class="align-self-end">
+                        <img src="/images/provost.jpg" alt="team member" class="float-left thumbnail img-responsive rounded-circle" />
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </article>
+
+                    <article>
+                        <img src="/images/dean.jpg" alt="team member" class="float-left thumbnail img-responsive rounded-circle" />
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </article>
+                </section>
+
+                <aside class="col-md-3">
+                    <h2>By Department</h2>
+                    <ul>
+                        <li>Leadership</li>
+                        <li>Sales</li>
+                        <li>Administration</li>
+                        <li>Instructors</li>
+                    </ul>
+                </aside>
+            </div>
+        </main>
+        <div class="clear"></div>
+        <footer>
+            <p>All Rights Reserved &copy; 2020</p>
+        </footer>
+    </div>
 </body>
 </html>

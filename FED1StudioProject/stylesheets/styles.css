@@ -7,13 +7,9 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 1em 10em;
-}
-
 header {
     margin-top: 2em;
+    margin-bottom: 3em;
 }
 
     header img {
@@ -23,24 +19,21 @@ header {
 
 .icon {
     margin-left: .5em;
-    background-size: 
 }
 
-.boxShadow {
+.box-shadow {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-#facebook {
-    color: rgb(59, 89, 152);
-    font
-    
+.facebook {
+    color: rgb(59, 89, 152);    
 }
 
-#twitter {
+.twitter {
     color: rgb(29, 202, 255);
 }
 
-#instagram {
+.instagram {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     -webkit-background-clip: text;
     /* Also define standard property for compatibility */
@@ -48,77 +41,26 @@ header {
     -webkit-text-fill-color: transparent;
 }
 
-nav {
-    background-color: rgb(52, 58, 64);
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
 
-    nav ul {
-        padding: 0;
-    }
-
-    nav li {
-        display: inline-block;
-        list-style: none;
-        padding: 1em;
-        position: relative;
-    }
-
-
-
-    nav ul li a:link, nav ul li a:visited {
-        color: #fff;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 10px;
-        margin: 0 1em;
-        padding: 1em;
-        transition: all .5s;
-    }
-
-
-    nav ul li a:hover {
-        color: #000;
-        background-color: #fff;
-        transform: translateY(-3px);
-    }
-
-    nav ul li a:active {
-        transform: translateY(1px);
-    }
-
-.pageHeadline {
+.page-headline {
     font-size: 2.8rem;
     text-align: center;
     margin-bottom: 2em;
 }
 
-.floatLeft {
-    float: left;
-}
 
-.floatRight {
-    float: right;
-}
-
-.clear {
-    clear: both;
-}
-
-
-#heading {
-    display: inline-block;
-    margin-left: 3em;
-}
-
-    #heading h1 {
+    .heading h1 {
         margin-bottom: 1em;
     }
 
 
-#headline {
-    font-size: 40px;
+.headline {
+    margin-left: 2rem;
+}
+
+.headline h1 {
+    font-size: 3rem;
+    margin-bottom: 1.3rem;
 }
 
 footer {
@@ -138,34 +80,35 @@ footer {
 
 /*#region index*/
 
-#aboutUsPhoto {
+
+.about-us-photo {
     width: 15em;
     height: 15em;
     margin-right: 1em;
 }
 
 
-.bigImage {
+.big-image {
     height: 25em;
 }
 
-#whyChooseUs article {
+.why-choose-us article {
     position: relative;
 }
 
-    #whyChooseUs article h2 {
+    .why-choose-us article h2 {
         margin-bottom: .5em;
     }
 
-#rightHeadline {
+.right-headline {
     padding: 2em 0 0 2em;
 }
 
-#leftHeadline {
+.left-headline {
     padding: 2em 2em 0 0;
 }
 
-.halfColumn {
+.half-column {
     width: 50%;
 }
 
@@ -179,60 +122,44 @@ footer {
 
 /*#region classes*/
 
-main {
-    margin: 0 3em;
+/*.card-subjects {
+    height: auto;
 }
 
-.cardGallery {
-    margin-bottom: 3em;
-}
+*/
 
-.row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2em;
-}
-
-
-
-.card {
-    display: inline-block;
-    width: 14.6875em;
-    height: 25em;
-    border: 1px solid #000;
-}
-
-.cardImage {
+.card-subjects-image {
     width: 100%;
     height: 11.25em;
     object-fit: cover;
 }
 
-.cardText {
+.card-subjects-text {
     padding: 0 .7em;
 }
 
-    .cardText h4 {
+    .card-subjects-text h4 {
         text-align: center;
         padding: .7em 0;
     }
 
-    .cardText p {
+    .card-subjects-text p {
         text-align: justify;
     }
 
-    .cardText h4, .cardText p {
+    .card-subjects-text h4, .card-subjects-text p {
         text-decoration: none;
         color: #000;
     }
 
 /*table styling*/
 
-#table table {
+.table table {
     margin: 0 auto;
+    width: 100%;
 }
 
-table {
+.table {
     text-align: center;
     border-collapse: collapse;
     width: 70%;
@@ -256,9 +183,9 @@ tbody tr:not(:last-child) {
     border-bottom: 1px solid #dedede;
 }
 
-#table h1 {
+.table h1 {
     text-align: center;
-    margin-bottom: 1em;
+    margin: 1em 0;
 }
 
 
@@ -269,17 +196,29 @@ tbody tr:not(:last-child) {
 
 
 /*#region team*/
-#leadership {
-    width: 70%;
+.leadership {
+    /*width: 70%;*/
 }
 
-    #leadership article:not(:last-child) {
+.leadership article {
+    width: 75%;
+}
+
+    .leadership article:not(:last-child) {
         margin-bottom: 3.5em;
     }
 
-    #leadership article img {
+    .leadership article img {
         margin-right: 1.5em;
+
     }
+
+    .img-responsive {
+        height: 15em;
+        width: 15em;
+        object-fit: cover;
+    }
+
 
 aside h2 {
     margin-bottom: 2em;
@@ -297,25 +236,25 @@ aside ul {
 
 /*#region contact*/
 
-#contact {
+.contact {
     text-align: center;
 }
 
-#contact h1 {
+.contact h1 {
     margin-bottom: 1em;
     font-size: 2.8em;
 }
 
-#contact ul {
+.contact ul {
     display: inline-block;
     margin-bottom: 2em;
 }
 
-#contact h1, #contact ul li {
+.contact h1, .contact ul li {
     text-align: center;
 }
 
-#contact ul li {
+.contact ul li {
     list-style-type: none;
     font-size: 1.5em;
     text-align: left;
@@ -323,20 +262,24 @@ aside ul {
     border-bottom: 1px solid #333;
 }
 
-#contact ul li:hover {
+.contact ul li a:hover {
+    text-decoration: none;
+}
+
+.contact ul li:hover {
     background-color: rgba(220, 220, 220, .6);
 }
 
-#contact ul li:first-child {
+.contact ul li:first-child {
     border-top: 1px solid #333;
 }
 
-.contactList {
+.contact-list {
     color: #000;
     text-decoration: none;
 }
 
-.contactList:hover {
+.contact-list:hover {
     
 }
 

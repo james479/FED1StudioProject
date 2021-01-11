@@ -6,164 +6,180 @@
     <meta name="keywords" content="education, subjects, <company name>, classes" />
     <meta name="author" content="James Glover" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-    <link href="stylesheets/styles.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+    <link href="stylesheets/styles.css" rel="stylesheet" />
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" />
     <title>Company Name | Classes</title>
 </head>
 <body>
-    <header>
-        <div class="floatLeft">
-            <img src="/images//image-container.png" alt="Company Logo" class="floatLeft" />
-            <div id="heading">
-                <h1 id="compnayName">Company Name</h1>
-                <h2>Slogan</h2>
+    <div class="container">
+        <header>
+            <div class="d-flex justify-content-between">
+                <div class=d-flex>
+                    <img src="/images/header-logo.jpg" alt="Company Logo" class="box-shadow" />
+                    <div class="headline">
+                        <h1 class="compnay-name">I.T. School</h1>
+                        <h2>A place for your to discover your future</h2>
+                    </div>
+                </div>
+                <div>
+                    <a href="#"><i class="fab fa-facebook-square fa-2x icon facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter socialMedi fa-2x icon twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square fa-2x icon instagram"></i></a>
+                    <!-- add any other social media icons here -->
+                </div>
             </div>
-        </div>
-        <div class="floatRight">
-            <a href="#"><i class="fab fa-facebook-square fa-2x icon" id="facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter socialMedi fa-2x icon" id="twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram-square fa-2x icon" id="instagram"></i></a>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        </div>
-    </header>
-    <div class="clear"></div>
-    <nav>
-        <ul>
-            <li>
-                <a href="/index.html">Home</a>
-            </li>
-            <li>
-                <a href="/Classes.html">Classes</a>
-            </li>
-            <li>
-                <a href="/Team.html">Team</a>
-            </li>
-            <li>
-                <a href="/Contact.html">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    <main>
-        <section class="cardGallery">
-            <h1 class="pageHeadline">Class Subjects</h1>
-            <div class="row">
-                <a href="#" target="_blank">
-                    <article class="card boxShadow">
-
-                        <img src="/images/image-container.png" alt="card image" class="cardImage" />
-                        <section class="cardText">
-                            <h4>Class Topic</h4>
-                            <p>
-                                This is a wider card with supporting text below as a natural lead-in to addtional content. This content is a little bit longer.
-                            </p>
-                        </section>
-                    </article>
-                </a>
-                <a href="#" target="_blank">
-                    <article class="card boxShadow">
-                        <img src="/images/image-container.png" alt="card image" class="cardImage" />
-                        <section class="cardText">
-                            <h4>Class Topic</h4>
-                            <p>
-                                This is a wider card with supporting text below as a natural lead-in to addtional content. This content is a little bit longer.
-                            </p>
-                        </section>
-                    </article>
-                </a>
-                <a href="#" target="_blank">
-                    <article class="card boxShadow">
-                        <img src="/images/image-container.png" alt="card image" class="cardImage" />
-                        <section class="cardText">
-                            <h4>Class Topic</h4>
-                            <p>
-                                This is a wider card with supporting text below as a natural lead-in to addtional content. This content is a little bit longer.
-                            </p>
-                        </section>
-                    </article>
-                </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Classes.html">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-
-            <div class="row">
-                <a href="#" target="_blank">
-                    <article class="card boxShadow">
-
-                        <img src="/images/image-container.png" alt="card image" class="cardImage" />
-                        <section class="cardText">
-                            <h4>Class Topic</h4>
+        </nav>
+        <main>
+            <h1 class="page-headline">Class Subjects</h1>
+            <section class="row">
+                <div class="col-md-4 d-flex mb-5 align-self-stretch" >
+                    <article class="card box-shadow">
+                        <img src="/images/cybersecurity.jpg" alt="card image" class="card-image-top card-subjects-image" />
+                        <section class="card-subjects-text card-body">
+                            <h4>Cybersecuirty</h4>
                             <p>
-                                This is a wider card with supporting text below as a natural lead-in to addtional content. This content is a little bit longer.
+                                The protection of internet-connected systems such as hardware, software and data from cyber-threats. The practices used by individuals and enterprises to protect against unauthorized access to data centers and other computerized systems.
                             </p>
                         </section>
                     </article>
-                </a>
-                <a href="#" target="_blank">
-                    <article class="card boxShadow">
-                        <img src="/images/image-container.png" alt="card image" class="cardImage" />
-                        <section class="cardText">
-                            <h4>Class Topic</h4>
+                </div>
+                <div class="col-md-4 mb-5 d-flex align-self-stretch">
+                    <article class="card box-shadow">
+                        <img src="/images/programming.jpg" alt="card image" class="card-image-top card-subjects-image" />
+                        <section class="card-subjects-text card-body">
+                            <h4>Programming</h4>
                             <p>
-                                This is a wider card with supporting text below as a natural lead-in to addtional content. This content is a little bit longer.
+                                Programming is the process of creating a set of instructions that tell a computer how to perform a task.Programming can be done using a variety of computer programming languages, such as JavaScript, Python, C, C#, C++, and Java.
                             </p>
                         </section>
                     </article>
-                </a>
-                <a href="#" target="_blank">
-                    <article class="card boxShadow">
-                        <img src="/images/image-container.png" alt="card image" class="cardImage" />
-                        <section class="cardText">
-                            <h4>Class Topic</h4>
+                </div>
+                <div class="col-md-4 mb-5 d-flex align-self-stretch">
+                    <article class="card box-shadow">
+                        <img src="/images/system-admin.jpg" alt="card image" class="card-image-top card-subjects-image" />
+                        <section class="card-subjects-text card-body">
+                            <h4>System Administration</h4>
                             <p>
-                                This is a wider card with supporting text below as a natural lead-in to addtional content. This content is a little bit longer.
+                                The field of work in which someone manages one or more systems, be they software, hardware, servers or workstations to ensure the systems are running efficiently and effectively.
                             </p>
                         </section>
                     </article>
-                </a>
-            </div>
+                </div>
+                <div class="col-md-4 mb-5 d-flex align-self-stretch">
+                    <article class="card box-shadow">
+                        <img src="/images/devops.png" alt="card image" class="card-image-top card-subjects-image" />
+                        <section class="card-subjects-text card-body">
+                            <h4>Devops</h4>
+                            <p>
+                                A set of practices that combines software development (Dev) and IT operations (Ops). It aims to shorten the systems development life cycle and provide continuous delivery with high software quality.
+                            </p>
+                        </section>
+                    </article>
+                </div>
 
-        </section>
-        <section id="table">
-            <h1>[Subject] - Class List</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>User Name</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Jacob</td>
-                        <td>Thorton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Larry</td>
-                        <td>Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Patrick</td>
-                        <td>Mahomes</td>
-                        <td>@chiefs</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Aaron</td>
-                        <td>Rodgers</td>
-                        <td>@packers</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
-    <footer>
-        <p>All Rights Reserved &copy; 2020</p>
-    </footer>
+                <div class="col-md-4 mb-5 d-flex align-self-stretch"">
+                    <article class="card box-shadow">
+                        <img src="/images/database.jpg" alt="card image" class="card-image-top card-subjects-image" />
+                        <section class="card-subjects-text card-body">
+                            <h4>Database Administration</h4>
+                            <p>
+                                Ensuring that a database is always available as needed. Other closely related tasks and roles are database security, database monitoring and troubleshooting, and planning for future growth.
+                            </p>
+                        </section>
+                    </article>
+                </div>
+
+                <div class="col-md-4 mb-5 d-flex align-self-stretch"">
+                    <article class="card-subjects box-shadow">
+                        <img src="/images/data-science.jpg" alt="card image" class="card-image-top card-subjects-image" />
+                        <section class="card-subjects-text card-body">
+                            <h4>Data Science</h4>
+                            <p>
+                                Concept to unify statistics, data analysis and their related methods in order to understand and analyze actual phenomena with data drawn from mathematics, statistics and computer science.
+                            </p>
+                        </section>
+                    </article>
+                </div>
+
+            </section>
+            <section class="table">
+                <h1>Class start dates</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Lead Instructor</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cybersecurity</td>
+                            <td>Mark Smith</td>
+                            <td>January 11, 2020</td>
+                            <td>January 30, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Programming</td>
+                            <td>Jane Smith</td>
+                            <td>February 7, 2020</td>
+                            <td>February 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>System Administration</td>
+                            <td>John Davis</td>
+                            <td>March 5, 2020</td>
+                            <td>March 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Devops</td>
+                            <td>Aaron Peterson</td>
+                            <td>April 5, 2020</td>
+                            <td>April 13, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Database Administration</td>
+                            <td>Elizabeth Cruz</td>
+                            <td>May 10, 2020</td>
+                            <td>May 14, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Data Science</td>
+                            <td>James Rodgers</td>
+                            <td>June 7, 2020</td>
+                            <td>June 13, 2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <p>All Rights Reserved &copy; 2020</p>
+        </footer>
+    </div>
 </body>
 </html>
