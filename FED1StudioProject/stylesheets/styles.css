@@ -138,6 +138,9 @@ tbody tr:not(:last-child) {
     margin: 1em 0;
 }
 
+.highlight-row {
+    background-color: #F2EEED;
+}
 
 /*#endregion*/
 
@@ -250,29 +253,29 @@ aside ul {
 
     .sidenav a {
         padding: 8px 8px 8px 32px;
-        text-decoration: none;
         font-size: 1.5em;
-        color: #343a40;
+        color: rgba(255,255,255,.5);
         display: block;
         transition: .3s;
     }
 
         .sidenav a:hover {
             color: #f1f1f1;
+            text-decoration: none;
         }
 
 .close-btn {
     position: absolute;
-    top: 4.2em;
-    right: 3em;
-    font-size: 3em !important;
-    margin-left: 4.2em;
+    top: 10px;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
 }
 
 .button {
     background: rgba(0, 0, 0, .5);
     height: 100%;
-    width: 1.8em;
+    width: 20px;
     z-index: 1000;
     position: fixed;
     left: 0;
