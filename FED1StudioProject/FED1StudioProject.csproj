@@ -85,6 +85,7 @@
     <Content Include="images\system-admin.jpg" />
     <Content Include="images\team_member.png" />
     <Content Include="index.html" />
+    <Content Include="scripts\main.js" />
     <Content Include="stylesheets\bootstrap.min.css" />
     <Content Include="stylesheets\styles.css" />
     <Content Include="Team.html" />
@@ -102,9 +103,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="scripts\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

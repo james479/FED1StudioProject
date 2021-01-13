@@ -1,12 +1,6 @@
 ﻿
 /*#region AllPages*/
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 header {
     margin-top: 2em;
     margin-bottom: 3em;
@@ -26,7 +20,7 @@ header {
 }
 
 .facebook {
-    color: rgb(59, 89, 152);    
+    color: rgb(59, 89, 152);
 }
 
 .twitter {
@@ -41,27 +35,31 @@ header {
     -webkit-text-fill-color: transparent;
 }
 
+.nav-item {
+    font-size: 1.5em;
+}
+
 
 .page-headline {
     font-size: 2.8rem;
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 }
 
 
-    .heading h1 {
-        margin-bottom: 1em;
-    }
+.heading h1 {
+    margin-bottom: 1em;
+}
 
 
 .headline {
     margin-left: 2rem;
 }
 
-.headline h1 {
-    font-size: 3rem;
-    margin-bottom: 1.3rem;
-}
+    .headline h1 {
+        font-size: 3rem;
+        margin-bottom: 1.3rem;
+    }
 
 footer {
     background-color: rgb(52, 58, 64);
@@ -78,55 +76,7 @@ footer {
 /*#endregion*/
 
 
-/*#region index*/
-
-
-.about-us-photo {
-    width: 15em;
-    height: 15em;
-    margin-right: 1em;
-}
-
-
-.big-image {
-    height: 25em;
-}
-
-.why-choose-us article {
-    position: relative;
-}
-
-    .why-choose-us article h2 {
-        margin-bottom: .5em;
-    }
-
-.right-headline {
-    padding: 2em 0 0 2em;
-}
-
-.left-headline {
-    padding: 2em 2em 0 0;
-}
-
-.half-column {
-    width: 50%;
-}
-
-
-
-
-
-
-/*#endregion*/
-
-
 /*#region classes*/
-
-/*.card-subjects {
-    height: auto;
-}
-
-*/
 
 .card-subjects-image {
     width: 100%;
@@ -200,24 +150,23 @@ tbody tr:not(:last-child) {
     /*width: 70%;*/
 }
 
-.leadership article {
-    width: 75%;
+    .leadership article {
+        width: 75%;
+    }
+
+        .leadership article:not(:last-child) {
+            margin-bottom: 3.5em;
+        }
+
+        .leadership article img {
+            margin-right: 1.5em;
+        }
+
+.img-responsive {
+    height: 15em;
+    width: 15em;
+    object-fit: cover;
 }
-
-    .leadership article:not(:last-child) {
-        margin-bottom: 3.5em;
-    }
-
-    .leadership article img {
-        margin-right: 1.5em;
-
-    }
-
-    .img-responsive {
-        height: 15em;
-        width: 15em;
-        object-fit: cover;
-    }
 
 
 aside h2 {
@@ -240,47 +189,104 @@ aside ul {
     text-align: center;
 }
 
-.contact h1 {
-    margin-bottom: 1em;
-    font-size: 2.8em;
-}
+    .contact h1 {
+        margin-bottom: 1em;
+        font-size: 2.8em;
+    }
 
-.contact ul {
-    display: inline-block;
-    margin-bottom: 2em;
-}
+    .contact ul {
+        display: inline-block;
+        margin-bottom: 2em;
+    }
 
-.contact h1, .contact ul li {
-    text-align: center;
-}
+        .contact h1, .contact ul li {
+            text-align: center;
+        }
 
-.contact ul li {
-    list-style-type: none;
-    font-size: 1.5em;
-    text-align: left;
-    padding: .5em;
-    border-bottom: 1px solid #333;
-}
+        .contact ul li {
+            list-style-type: none;
+            font-size: 1.5em;
+            text-align: left;
+            padding: .5em;
+            border-bottom: 1px solid #333;
+        }
 
-.contact ul li a:hover {
-    text-decoration: none;
-}
+            .contact ul li a:hover {
+                text-decoration: none;
+            }
 
-.contact ul li:hover {
-    background-color: rgba(220, 220, 220, .6);
-}
+            .contact ul li:hover {
+                background-color: rgba(220, 220, 220, .6);
+            }
 
-.contact ul li:first-child {
-    border-top: 1px solid #333;
-}
+            .contact ul li:first-child {
+                border-top: 1px solid #333;
+            }
 
 .contact-list {
     color: #000;
     text-decoration: none;
 }
 
-.contact-list:hover {
-    
+    .contact-list:hover {
+    }
+
+/*#endregion*/
+
+/*#region sidenav*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .9);
+    overflow-x: hidden;
+    padding-top: 100px;
+    transition: .5s;
+}
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 1.5em;
+        color: #343a40;
+        display: block;
+        transition: .3s;
+    }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+.close-btn {
+    position: absolute;
+    top: 4.2em;
+    right: 3em;
+    font-size: 3em !important;
+    margin-left: 4.2em;
+}
+
+.button {
+    background: rgba(0, 0, 0, .5);
+    height: 100%;
+    width: 1.8em;
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.verticle-text {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    writing-mode: vertical-lr;
+    color: #000;
+    font-weight: bold;
 }
 
 /*#endregion*/
