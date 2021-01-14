@@ -76,6 +76,7 @@
     <Content Include="images\database.jpg" />
     <Content Include="images\dean.jpg" />
     <Content Include="images\devops.png" />
+    <Content Include="images\favicon.ico" />
     <Content Include="images\great-career.jpg" />
     <Content Include="images\header-logo.jpg" />
     <Content Include="images\image-container.png" />
