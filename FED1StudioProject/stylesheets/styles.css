@@ -205,6 +205,7 @@ footer {
 
     .card-subjects-text p {
         text-align: justify;
+        text-decoration: none;
     }
 
     .card-subjects-text h4, .card-subjects-text p {
