@@ -70,6 +70,10 @@
     <Content Include="Classes.html" />
     <Content Include="Contact.html" />
     <Content Include="images\about-us.jpg" />
+    <Content Include="images\admin-executive.jpg" />
+    <Content Include="images\admin-manager.jpg" />
+    <Content Include="images\assistant-chief2.jpg" />
+    <Content Include="images\assitant-cheif.jpg" />
     <Content Include="images\commitment.jpg" />
     <Content Include="images\cybersecurity.jpg" />
     <Content Include="images\data-science.jpg" />
@@ -79,10 +83,16 @@
     <Content Include="images\favicon.ico" />
     <Content Include="images\great-career.jpg" />
     <Content Include="images\header-logo.jpg" />
+    <Content Include="images\hr-supervisor.jpg" />
+    <Content Include="images\list-icon.png" />
     <Content Include="images\image-container.png" />
     <Content Include="images\president.jpg" />
     <Content Include="images\programming.jpg" />
     <Content Include="images\provost.jpg" />
+    <Content Include="images\sales-director.jpg" />
+    <Content Include="images\sales-manager.jpg" />
+    <Content Include="images\sales-representative.jpg" />
+    <Content Include="images\school-chief.jpg" />
     <Content Include="images\system-admin.jpg" />
     <Content Include="images\team_member.png" />
     <Content Include="index.html" />

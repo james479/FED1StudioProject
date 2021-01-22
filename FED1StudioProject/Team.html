@@ -30,70 +30,178 @@
                 </div>
             </div>
         </header>
-        <nav class="navbar mb-5">
-            <ul>
+        <nav class="main-navbar">
+            <span class="hamburger" id="navbar-toggle">
+                <a class="hamburger" id="menu-btn"><i class="fas fa-bars fa-2x"></i></a>
+            </span>
+            <ul id="js-menu" class="hide-nav">
                 <li>
                     <a href="/index.html">Home</a>
                 </li>
                 <li>
                     <a href="/Classes.html">Classes</a>
                 </li>
-                <li>
-                    <a href="/Team.html" class="active">Team</a>
+                <li  class="active-page">
+                    <a href="/Team.html">Team</a>
                 </li>
                 <li>
                     <a href="/Contact.html">Contact</a>
                 </li>
+                <li>
+
+                </li>
             </ul>
-            <a href="javascript:void(0)" class="hamburger" id="menu-btn" onclick="toggleNav()"><i class="fas fa-bars fa-2x"></i></a>
+
         </nav>
         <main>
-            <div class="row">
-                <section class="leadership d-flex flex-column col-md-9">
-                    <h1 class="page-headline">Leadership</h1>
-                    <article>
-                        <img src="/images/president.jpg" alt="team member" class="img-responsive rounded-circle" />
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        </p>
-                        <div class="clear"></div>
-                    </article>
+            <div class="team-grid">
+                <section class="leadership">
+                    <h1 class="page-headline">Team</h1>
+                    <div id="section-leadership" class="active-category">
+                        <article>
+                            <img src="/images/president.jpg" alt="team member" class="img-responsive rounded-circle thumb" />
+                            <h4>Jay Delorey - President</h4>
+                            <p>
+                                Jay Delorey is a native of Nashville, Tennessee. He earned his undergraduate and graduate degrees at Vanderbilt Univeserity in education. He came to the I.T. School as Dean in 2010 and worked his way up to President in 2019. His leadership has bought the I.T. School into the cutting edge of 21st century technology. He is married with three children.
+                            </p>
+                            <div class="clear"></div>
+                        </article>
 
-                    <article class="align-self-end">
-                        <img src="/images/provost.jpg" alt="team member" class="thumbnail img-responsive rounded-circle" />
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        </p>
-                        <div class="clear"></div>
-                    </article>
+                        <article class="right-side-flex">
+                            <img src="/images/provost.jpg" alt="team member" class="thumbnail img-responsive rounded-circle thumb" />
+                            <h4>Joyce Harrison - Provost</h4>
+                            <p>
+                                Joyce Harrison is our newest member to our leadership team. She came to us from the University of Kansas, where she served as Dean of the School of Engineering. She was born and raised in Lawerence, Kansas. She received her undergraduate and graduate degrees in Computer Science at the University of Kansas. She is married with 2 small children.
+                            </p>
+                            <div class="clear"></div>
+                        </article>
 
-                    <article>
-                        <img src="/images/dean.jpg" alt="team member" class="thumbnail img-responsive rounded-circle" />
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        </p>
-                        <div class="clear"></div>
-                    </article>
+                        <article>
+                            <img src="/images/dean.jpg" alt="team member" class="thumbnail img-responsive rounded-circle thumb" />
+                            <h4>Elliot Cookingham - Dean</h4>
+                            <p>
+                                Elliot Cookingham is a veteran of the I.T. School. He starated as an instructor in the System Administration department. He worked his way up to lead instructor and eventually the Dean in 2018. He is a native of Houston, Texas. He received his undergraduate degree from the University of Texas in computer engineering. He recently is married with one child and one on the way.
+                            </p>
+                            <div class="clear"></div>
+                        </article>
+                    </div>
+
+                    <div id="section-sales" class="hidden-category">
+                        <article>
+                            <img src="/images/sales-director.jpg" alt="Shawnta Faulcon" class="img-responsive rounded-circle thumb" />
+                            <h4>Shawnta Faulcon - VP of Sales</h4>
+                            <p>
+                                Shawnta Faulcon come to the I.T. School in 2015 as our Sales Manager and was promoted to VP of Sales in 2018. She is a native of Denver, Cololrado and received her undergraduated degree in Marketing at the University of Colorado. She is married with three children.
+                            </p>
+                            <div class="clear"></div>
+                        </article>
+
+                        <article class="right-side-flex">
+                            <img src="/images/sales-manager.jpg" alt="Darcie Sgro" class="thumbnail img-responsive rounded-circle thumb" />
+                            <h4>Darcie Sgro - Sales Manager</h4>
+                            <p>
+                                Darcie Sgro is a native of Kansas City, Kansas and came to our team as Sales Manager in 2018. She received her undergraduate degree from the University of Missouri Kansas City in 2010. She comes from a military family and is passionate about veteran issues at The I.T. School.
+                            </p>
+                            <div class="clear"></div>
+                        </article>
+
+                        <article>
+                            <img src="/images/sales-representative.jpg" alt="team member" class="thumbnail img-responsive rounded-circle thumb" />
+                            <h4>Giberto Heise - Sales Representative</h4>
+                            <p>
+                                Giberto Heise is a native of St. Louis, Missouri, and came to our team in 2017. He received his undergraduate degree in fiance from the DePaul Universtiy. Giberto is passionate in making sure our students are comfortable financially. Giberto is currently engaged and is expecting a child in a few months.
+                            </p>
+                            <div class="clear"></div>
+                        </article>
+                    </div>
+
+                    <div id="section-administration" class="hidden-category">
+                        <article>
+                            <img src="/images/admin-executive.jpg" alt="Jerry Tang" class="img-responsive rounded-circle thumb" />
+                            <h4>Jerry Tang - Administration Executive</h4>
+                            <p>
+                                Jerry Tang is a native of Atlanta, Georgia and come to our team in 2011 as Administration Manager. He received his undergraduate and graduate degrees at the University of Georgia in Business Administration. He is married with two children.
+                            </p>
+                            <div class="clear"></div>
+                        </article>
+
+                        <article class="right-side-flex">
+                            <img src="/images/admin-manager.jpg" alt="Kristen Stever" class="thumbnail img-responsive rounded-circle thumb" />
+                            <h4>Kristen Stever - Administration Manager</h4>
+                            <p>
+                                Kristen Stever is a native of Austin, Texas and joined the I.T. School in 2018. She received her undergraduate degree from the University of Texas in Business Administration. She has always had a passion for technology and believes in our mission of educating the public in information technology.
+                            </p>
+                            <div class="clear"></div>
+                        </article>
+
+                        <article>
+                            <img src="/images/hr-supervisor.jpg" alt="Tomas Delzell" class="thumbnail img-responsive rounded-circle thumb" />
+                            <h4>Tomas Delzell - H & R Supervisor</h4>
+                            <p>
+                                Tomas Delzell is a native of Miami, Florida and joined the I.T. School in 2017. He received his undergraduate degree from the University of Miami in Human Resources. He is married with two children.
+                            </p>
+                            <div class="clear"></div>
+                        </article>
+                    </div>
+
+                    <div id="section-instructors" class="hidden-category">
+                        <article>
+                            <img src="/images/school-chief.jpg" alt="Duncan Buck" class="img-responsive rounded-circle thumb" />
+                            <h4>Duncan Buck - School Chief</h4>
+                            <p>
+                                Duncan Buck is a native of Phoeniz, Arizona and has been part of our team since 2009. He was promoted to school chief in 2017. Duncan received is undergraduate and graduate degrees from the University of Arizona in Computer Science. He is married with three children.
+                            </p>
+                            <div class="clear"></div>
+                        </article>
+
+                        <article class="right-side-flex">
+                            <img src="/images/assitant-cheif.jpg" alt="Rodger McCullers" class="thumbnail img-responsive rounded-circle thumb" />
+                            <h4>Rodger McCullers - Assistant School Chief</h4>
+                            <p>
+                                Rodger McCullers is our newest team member of the I.T. School. He is a native of Wichita, Kansas and got his undergraduate and graduate degrees from Wichita State University in Computer Engineering. Rodger previous was an instructor at Kansas State University. He is married with one child.
+                            </p>
+                            <div class="clear"></div>
+                        </article>
+
+                        <article>
+                            <img src="/images/assistant-chief2.jpg" alt="Hollie Laven" class="thumbnail img-responsive rounded-circle thumb" />
+                            <h4>Hollie Laven - Assistant School Chief</h4>
+                            <p>
+                                Hollie Laven is a native of Oklahoma City, Oklahoma and has been part of our team since 2015. She received her undergraduate and graudate degrees from the University of Oklahoma in Computer Engineering. She is married with one child and one on the way.
+                            </p>
+                            <div class="clear"></div>
+                        </article>
+                    </div>
                 </section>
-
-                <aside class="col-md-3">
+                <aside>
                     <h2>By Department</h2>
                     <ul>
-                        <li>Leadership</li>
-                        <li>Sales</li>
-                        <li>Administration</li>
-                        <li>Instructors</li>
+                        <li class="active-department" data-category="section-leadership">Leadership</li>
+                        <li data-category="section-sales">Sales</li>
+                        <li data-category="section-administration">Administration</li>
+                        <li data-category="section-instructors">Instructors</li>
                     </ul>
                 </aside>
             </div>
         </main>
+
+        <!-- lightbox container - the div below adds the dark background -->
+        <div id="lightbox-container">
+            <!-- lightbox content - container for the larger image -->
+            <div id="lightbox-content">
+                <!-- <img> will be inserted here when a thumbnail is clicked -->
+            </div>
+        </div>
+
         <div class="clear"></div>
         <footer>
-            <p>All Rights Reserved &copy; 2020</p>
+            <p>All Rights Reserved &copy; <span id="year"></span></p>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

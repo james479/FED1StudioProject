@@ -7,8 +7,8 @@
     <meta name="author" content="James Glover" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="stylesheets/styles.css" rel="stylesheet" />
     <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" />
+    <link href="stylesheets/styles.css" rel="stylesheet" />
     <title>Company Name | Classes</title>
 </head>
 <body>
@@ -30,13 +30,16 @@
                 </div>
             </div>
         </header>
-        <nav class="navbar mb-5">
-            <ul>
+        <nav class="main-navbar">
+            <span class="hamburger" id="navbar-toggle">
+                <a class="hamburger" id="menu-btn"><i class="fas fa-bars fa-2x"></i></a>
+            </span>
+            <ul id="js-menu" class="hide-nav">
                 <li>
                     <a href="/index.html">Home</a>
                 </li>
-                <li>
-                    <a href="/Classes.html" class="active">Classes</a>
+                <li class="active-page">
+                    <a href="/Classes.html">Classes</a>
                 </li>
                 <li>
                     <a href="/Team.html">Team</a>
@@ -44,14 +47,18 @@
                 <li>
                     <a href="/Contact.html">Contact</a>
                 </li>
+                <li>
+
+                </li>
             </ul>
-            <a href="javascript:void(0)" class="hamburger" id="menu-btn" onclick="toggleNav()"><i class="fas fa-bars fa-2x"></i></a>
+
         </nav>
         <main>
             <h1 class="page-headline">Class Subjects</h1>
             <section class="row">
+
                 <div class="col-md-4 d-flex mb-5 align-self-stretch">
-                    <article class="card box-shadow">
+                    <article class="card box-shadow thumb" data-modal="cybersecurity">
                         <img src="/images/cybersecurity.jpg" alt="card image" class="card-image-top card-subjects-image" />
                         <section class="card-subjects-text card-body">
                             <h4>Cybersecuirty</h4>
@@ -61,8 +68,9 @@
                         </section>
                     </article>
                 </div>
+
                 <div class="col-md-4 mb-5 d-flex align-self-stretch">
-                    <article class="card box-shadow">
+                    <article class="card box-shadow thumb" data-modal="programming">
                         <img src="/images/programming.jpg" alt="card image" class="card-image-top card-subjects-image" />
                         <section class="card-subjects-text card-body">
                             <h4>Programming</h4>
@@ -72,8 +80,9 @@
                         </section>
                     </article>
                 </div>
+
                 <div class="col-md-4 mb-5 d-flex align-self-stretch">
-                    <article class="card box-shadow">
+                    <article class="card box-shadow thumb" data-modal="systemadmin">
                         <img src="/images/system-admin.jpg" alt="card image" class="card-image-top card-subjects-image" />
                         <section class="card-subjects-text card-body">
                             <h4>System Administration</h4>
@@ -83,8 +92,9 @@
                         </section>
                     </article>
                 </div>
+
                 <div class="col-md-4 mb-5 d-flex align-self-stretch">
-                    <article class="card box-shadow">
+                    <article class="card box-shadow thumb" data-modal="devops">
                         <img src="/images/devops.png" alt="card image" class="card-image-top card-subjects-image" />
                         <section class="card-subjects-text card-body">
                             <h4>Devops</h4>
@@ -95,10 +105,10 @@
                     </article>
                 </div>
 
-                <div class="col-md-4 mb-5 d-flex align-self-stretch" ">
-                    <article class="card box-shadow">
+                <div class="col-md-4 mb-5 d-flex align-self-stretch">
+                    <article class="card box-shadow thumb" data-modal="database">
                         <img src="/images/database.jpg" alt="card image" class="card-image-top card-subjects-image" />
-                        <section class="card-subjects-text card-body">
+                        <section class="card-subjects-text card-body" data-modal="database">
                             <h4>Database Administration</h4>
                             <p>
                                 Ensuring that a database is always available as needed. Other closely related tasks and roles are database security, database monitoring and troubleshooting, and planning for future growth.
@@ -107,8 +117,8 @@
                     </article>
                 </div>
 
-                <div class="col-md-4 mb-5 d-flex align-self-stretch" ">
-                    <article class="card-subjects box-shadow">
+                <div class="col-md-4 mb-5 d-flex align-self-stretch">
+                    <article class="card box-shadow thumb" data-modal="datascience">
                         <img src="/images/data-science.jpg" alt="card image" class="card-image-top card-subjects-image" />
                         <section class="card-subjects-text card-body">
                             <h4>Data Science</h4>
@@ -120,297 +130,332 @@
                 </div>
 
             </section>
-            <section class="table">
-                <h1>Class start dates</h1>
-                <table id="cybersecurity">
-                    <thead>
-                        <tr>
-                            <th>Subject</th>
-                            <th>Lead Instructor</th>
-                            <th>Start Date</th>
-                            <th>End Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Cybersecurity</td>
-                            <td>Mark Smith</td>
-                            <td>January 11, 2020</td>
-                            <td>January 30, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Programming</td>
-                            <td>Jane Smith</td>
-                            <td>February 7, 2020</td>
-                            <td>February 12, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>System Administration</td>
-                            <td>John Davis</td>
-                            <td>March 5, 2020</td>
-                            <td>March 12, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Devops</td>
-                            <td>Aaron Peterson</td>
-                            <td>April 5, 2020</td>
-                            <td>April 13, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Database Administration</td>
-                            <td>Elizabeth Cruz</td>
-                            <td>May 10, 2020</td>
-                            <td>May 14, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Data Science</td>
-                            <td>James Rodgers</td>
-                            <td>June 7, 2020</td>
-                            <td>June 13, 2021</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table id="programming">
-                    <thead>
-                        <tr>
-                            <th>Subject</th>
-                            <th>Lead Instructor</th>
-                            <th>Start Date</th>
-                            <th>End Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Cybersecurity</td>
-                            <td>Mark Smith</td>
-                            <td>January 11, 2020</td>
-                            <td>January 30, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Programming</td>
-                            <td>Jane Smith</td>
-                            <td>February 7, 2020</td>
-                            <td>February 12, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>System Administration</td>
-                            <td>John Davis</td>
-                            <td>March 5, 2020</td>
-                            <td>March 12, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Devops</td>
-                            <td>Aaron Peterson</td>
-                            <td>April 5, 2020</td>
-                            <td>April 13, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Database Administration</td>
-                            <td>Elizabeth Cruz</td>
-                            <td>May 10, 2020</td>
-                            <td>May 14, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Data Science</td>
-                            <td>James Rodgers</td>
-                            <td>June 7, 2020</td>
-                            <td>June 13, 2021</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table id="systemadmin">
-                    <thead>
-                        <tr>
-                            <th>Subject</th>
-                            <th>Lead Instructor</th>
-                            <th>Start Date</th>
-                            <th>End Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Cybersecurity</td>
-                            <td>Mark Smith</td>
-                            <td>January 11, 2020</td>
-                            <td>January 30, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Programming</td>
-                            <td>Jane Smith</td>
-                            <td>February 7, 2020</td>
-                            <td>February 12, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>System Administration</td>
-                            <td>John Davis</td>
-                            <td>March 5, 2020</td>
-                            <td>March 12, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Devops</td>
-                            <td>Aaron Peterson</td>
-                            <td>April 5, 2020</td>
-                            <td>April 13, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Database Administration</td>
-                            <td>Elizabeth Cruz</td>
-                            <td>May 10, 2020</td>
-                            <td>May 14, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Data Science</td>
-                            <td>James Rodgers</td>
-                            <td>June 7, 2020</td>
-                            <td>June 13, 2021</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table id="devops">
-                    <thead>
-                        <tr>
-                            <th>Subject</th>
-                            <th>Lead Instructor</th>
-                            <th>Start Date</th>
-                            <th>End Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Cybersecurity</td>
-                            <td>Mark Smith</td>
-                            <td>January 11, 2020</td>
-                            <td>January 30, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Programming</td>
-                            <td>Jane Smith</td>
-                            <td>February 7, 2020</td>
-                            <td>February 12, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>System Administration</td>
-                            <td>John Davis</td>
-                            <td>March 5, 2020</td>
-                            <td>March 12, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Devops</td>
-                            <td>Aaron Peterson</td>
-                            <td>April 5, 2020</td>
-                            <td>April 13, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Database Administration</td>
-                            <td>Elizabeth Cruz</td>
-                            <td>May 10, 2020</td>
-                            <td>May 14, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Data Science</td>
-                            <td>James Rodgers</td>
-                            <td>June 7, 2020</td>
-                            <td>June 13, 2021</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table id="database">
-                    <thead>
-                        <tr>
-                            <th>Subject</th>
-                            <th>Lead Instructor</th>
-                            <th>Start Date</th>
-                            <th>End Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Cybersecurity</td>
-                            <td>Mark Smith</td>
-                            <td>January 11, 2020</td>
-                            <td>January 30, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Programming</td>
-                            <td>Jane Smith</td>
-                            <td>February 7, 2020</td>
-                            <td>February 12, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>System Administration</td>
-                            <td>John Davis</td>
-                            <td>March 5, 2020</td>
-                            <td>March 12, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Devops</td>
-                            <td>Aaron Peterson</td>
-                            <td>April 5, 2020</td>
-                            <td>April 13, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Database Administration</td>
-                            <td>Elizabeth Cruz</td>
-                            <td>May 10, 2020</td>
-                            <td>May 14, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Data Science</td>
-                            <td>James Rodgers</td>
-                            <td>June 7, 2020</td>
-                            <td>June 13, 2021</td>
-                        </tr>
-                    </tbody>
-                </table><table id="datascience">
-                    <thead>
-                        <tr>
-                            <th>Subject</th>
-                            <th>Lead Instructor</th>
-                            <th>Start Date</th>
-                            <th>End Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Cybersecurity</td>
-                            <td>Mark Smith</td>
-                            <td>January 11, 2020</td>
-                            <td>January 30, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Programming</td>
-                            <td>Jane Smith</td>
-                            <td>February 7, 2020</td>
-                            <td>February 12, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>System Administration</td>
-                            <td>John Davis</td>
-                            <td>March 5, 2020</td>
-                            <td>March 12, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Devops</td>
-                            <td>Aaron Peterson</td>
-                            <td>April 5, 2020</td>
-                            <td>April 13, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Database Administration</td>
-                            <td>Elizabeth Cruz</td>
-                            <td>May 10, 2020</td>
-                            <td>May 14, 2021</td>
-                        </tr>
-                        <tr>
-                            <td>Data Science</td>
-                            <td>James Rodgers</td>
-                            <td>June 7, 2020</td>
-                            <td>June 13, 2021</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+
         </main>
+
+        <div id="cybersecurity" class="modal">
+            <span class="close" data-modal="cybersecurity">&#x2716;</span>
+            <div class="modal-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Lead Instructor</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Introduction into Cybersecurity</td>
+                            <td>Mark Smith</td>
+                            <td>January 11, 2020</td>
+                            <td>January 30, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Introduction into Networking</td>
+                            <td>Jane Smith</td>
+                            <td>February 7, 2020</td>
+                            <td>February 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Network Security</td>
+                            <td>John Davis</td>
+                            <td>March 5, 2020</td>
+                            <td>March 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Hacking Techniques</td>
+                            <td>Aaron Peterson</td>
+                            <td>April 5, 2020</td>
+                            <td>April 13, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Computer Forensics</td>
+                            <td>Elizabeth Cruz</td>
+                            <td>May 10, 2020</td>
+                            <td>May 14, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Web Application Security</td>
+                            <td>James Rodgers</td>
+                            <td>June 7, 2020</td>
+                            <td>June 13, 2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="programming" class="modal">
+            <span class="close" data-modal="programming">&#x2716;</span>
+            <div class="modal-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Lead Instructor</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Introduction Into Programming</td>
+                            <td>Arlinda Troxel</td>
+                            <td>January 11, 2020</td>
+                            <td>January 30, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Data Structures and Algoritms</td>
+                            <td>Irish Farrington</td>
+                            <td>February 7, 2020</td>
+                            <td>February 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Object Oriented Programming</td>
+                            <td>Deandrea Harkleroad</td>
+                            <td>March 5, 2020</td>
+                            <td>March 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Discrete Mathematics</td>
+                            <td>Donte Buechner</td>
+                            <td>April 5, 2020</td>
+                            <td>April 13, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Web Development</td>
+                            <td>Delena Calahan</td>
+                            <td>May 10, 2020</td>
+                            <td>May 14, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Advanced Algoritms</td>
+                            <td>Shu Toone</td>
+                            <td>June 7, 2020</td>
+                            <td>June 13, 2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="systemadmin" class="modal">
+            <span class="close" data-modal="systemadmin">&#x2716;</span>
+            <div class="modal-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Lead Instructor</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Introduction Into System Administration</td>
+                            <td>Shawnee Tindel</td>
+                            <td>January 11, 2020</td>
+                            <td>January 30, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Network Design</td>
+                            <td>Rhona Manor</td>
+                            <td>February 7, 2020</td>
+                            <td>February 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>High Performance Computing</td>
+                            <td>Rosa Hurlbut</td>
+                            <td>March 5, 2020</td>
+                            <td>March 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>LANSs and WANs</td>
+                            <td>Katheryn Poat</td>
+                            <td>April 5, 2020</td>
+                            <td>April 13, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Mobile Device Technology</td>
+                            <td>Maryrose Stuckey</td>
+                            <td>May 10, 2020</td>
+                            <td>May 14, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Network Troubleshooting</td>
+                            <td>Christina Niemi</td>
+                            <td>June 7, 2020</td>
+                            <td>June 13, 2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="devops" class="modal">
+            <span class="close" data-modal="devops">&#x2716;</span>
+            <div class="modal-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Lead Instructor</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Introduction Into Devops</td>
+                            <td>Hettie Dalessandro</td>
+                            <td>January 11, 2020</td>
+                            <td>January 30, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Continuous Integration</td>
+                            <td>Ali Shutter</td>
+                            <td>February 7, 2020</td>
+                            <td>February 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Scripting</td>
+                            <td>Usha Gaunt</td>
+                            <td>March 5, 2020</td>
+                            <td>March 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Cloud Technology</td>
+                            <td>Gia Wilk</td>
+                            <td>April 5, 2020</td>
+                            <td>April 13, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Monitoring Tools</td>
+                            <td>Kimbra Tetreault</td>
+                            <td>May 10, 2020</td>
+                            <td>May 14, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Configuration Managment</td>
+                            <td>Latina Elbert</td>
+                            <td>June 7, 2020</td>
+                            <td>June 13, 2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="database" class="modal">
+            <span class="close" data-modal="database">&#x2716;</span>
+            <div class="modal-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Lead Instructor</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Introduction Into Databases</td>
+                            <td>Alfonzo Wooton</td>
+                            <td>January 11, 2020</td>
+                            <td>January 30, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>SQL</td>
+                            <td>Marsha Lindgren</td>
+                            <td>February 7, 2020</td>
+                            <td>February 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Database Security</td>
+                            <td>Merrilee Demay</td>
+                            <td>March 5, 2020</td>
+                            <td>March 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Oracle Databases</td>
+                            <td>Garret Weiner</td>
+                            <td>April 5, 2020</td>
+                            <td>April 13, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Microsoft SQL Server</td>
+                            <td>Loree Minder</td>
+                            <td>May 10, 2020</td>
+                            <td>May 14, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>NOSQL Databases</td>
+                            <td>Alayna Blurton</td>
+                            <td>June 7, 2020</td>
+                            <td>June 13, 2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="datascience" class="modal">
+            <span class="close" data-modal="datascience">&#x2716;</span>
+            <div class="modal-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Lead Instructor</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Introduction Into Data Science</td>
+                            <td>Thomas Cumberland</td>
+                            <td>January 11, 2020</td>
+                            <td>January 30, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Statisctics</td>
+                            <td>Camie Dan</td>
+                            <td>February 7, 2020</td>
+                            <td>February 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Linear Algebra</td>
+                            <td>Cecily Taliaferro</td>
+                            <td>March 5, 2020</td>
+                            <td>March 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Data Mining</td>
+                            <td>Mathilde Vanburen</td>
+                            <td>April 5, 2020</td>
+                            <td>April 13, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Data Visualization</td>
+                            <td>Bobbie Priddy</td>
+                            <td>May 10, 2020</td>
+                            <td>May 14, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Programming for Data Science</td>
+                            <td>Noel Akers</td>
+                            <td>June 7, 2020</td>
+                            <td>June 13, 2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
         <!-- side menu -->
         <div id="admin-btn" class="button" onclick="openAdminNav()">
@@ -418,21 +463,22 @@
         </div>
         <div class="sidenav" id="admin-nav">
             <a href="javascript:void(0)" class="close-btn" onclick="closeAdminNav()">&times;</a>
-            <a href="#cybersecurity">Cybersecurity</a>
-            <a href="#programming">Programming</a>
-            <a href="#systemadmin">System Administration</a>
-            <a href="#devops">Devops</a>
-            <a href="#database">Database Administration</a>
-            <a href="#datascience">Data Science</a>
+            <p data-modal="cybersecurity" class="thumb">Cybersecurity</p>
+            <p data-modal="programming" class="thumb">Programming</p>
+            <p data-modal="systemadmin" class="thumb">System Administration</p>
+            <p data-modal="devops" class="thumb">Devops</p>
+            <p data-modal="database" class="thumb">Database Administration</p>
+            <p data-modal="datascience" class="thumb">Data Science</p>
         </div>
 
         <footer>
-            <p>All Rights Reserved &copy; 2020</p>
+            <p>All Rights Reserved &copy; <span id="year"></span></p>
         </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    <script src="scripts/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+        <script src="scripts/main.js"></script>
 </body>
 </html>
